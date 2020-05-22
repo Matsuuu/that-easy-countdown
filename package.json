@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "rimraf dist && tsc && rollup -c rollup.config.js",
-    "start:build": "npm run build && es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
+    "build": "rimraf docs && tsc && rollup -c rollup.config.js",
+    "start:build": "npm run build && es-dev-server --root-dir docs --app-index index.html --open --compatibility none",
     "start": "concurrently --kill-others --names tsc,es-dev-server \"npm run tsc:watch\" \"es-dev-server --app-index index.html --node-resolve --open --watch\"",
     "tsc:watch": "tsc --watch"
   },
