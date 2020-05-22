@@ -184,9 +184,13 @@ export class ThatEasyCountdown extends LitElement {
           more than one word, seperate the words with a plus. e.g. Open+Sans
         </p>
         <p>The fonts are loaded from Google fonts</p>
+        <label>Font name</label>
         <input type="text" placeholder="Font name" id="font" value="Roboto" />
+        <label>Font color (Hex)</label>
         <input type="text" placeholder="Color" id="color" value="000000" />
+        <label>Font size (px)</label>
         <input type="number" placeholder="Font size" id="size" value="24" />
+        <label>Countdown end time</label>
         <input
           type="datetime-local"
           value="${this.toDateTimeLocal(new Date())}"
