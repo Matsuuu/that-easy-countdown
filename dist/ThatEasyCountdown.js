@@ -94,7 +94,7 @@ let ThatEasyCountdown = class ThatEasyCountdown extends LitElement {
       <h3></h3>`;
     }
     toDateTimeLocal(date) {
-        return `${date.getFullYear()}-${this.handleTrailing(date.getMonth() + 1)}-${this.handleTrailing(date.getDate())}T${date.getHours()}:${date.getMinutes()}`;
+        return `${date.getFullYear()}-${this.handleTrailing(date.getMonth() + 1)}-${this.handleTrailing(date.getDate())}T${this.handleTrailing(date.getHours())}:${this.handleTrailing(date.getMinutes())}`;
     }
     copySettings() {
         var _a, _b, _c, _d;
