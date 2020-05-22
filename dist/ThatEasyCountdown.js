@@ -136,6 +136,11 @@ let ThatEasyCountdown = class ThatEasyCountdown extends LitElement {
       </style>
       <div class="setup-wrapper">
         <h2>Set up timer</h2>
+        <p>
+          Write the font name with a capital letter. If the name consists of
+          more than one word, seperate the words with a plus. e.g. Open+Sans
+        </p>
+        <p>The fonts are loaded from Google fonts</p>
         <input type="text" placeholder="Font name" id="font" value="Roboto" />
         <input type="text" placeholder="Color" id="color" value="000000" />
         <input type="number" placeholder="Font size" id="size" value="24" />
